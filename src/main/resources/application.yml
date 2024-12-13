@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: create-user
+          uri: https://gateway-poc-axh2wfbs7q-ew.a.run.app
+          predicates:
+            - Path=/users
+            - Method=POST
+          filters:
+            - RewritePath=/users, /users/create
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
