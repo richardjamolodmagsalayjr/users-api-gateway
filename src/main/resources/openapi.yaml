@@ -48,6 +48,7 @@ paths:
           schema:
             type: string
       requestBody:
+        description: User object with updated information
         required: true
         content:
           application/json:
