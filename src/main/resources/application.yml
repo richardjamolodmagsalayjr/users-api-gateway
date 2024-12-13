@@ -24,6 +24,14 @@ spring:
           filters:
             - RewritePath=/users/(?<id>.*), /users/${id}/update
 
+        - id: delete-user
+          uri: https://gateway-poc-axh2wfbs7q-ew.a.run.app
+          predicates:
+            - Path=/users/{id}
+            - Method=POST
+          filters:
+            - RewritePath=/users/(?<id>.*), /users/${id}/delete
+
 logging:
   level:
     org.springframework.cloud.gateway: DEBUG
