@@ -60,3 +60,25 @@ This transformation would allow the API Gateway to interact with services that m
 
 ## Conclusion
 The design of the API Gateway follows RESTful principles with proper HTTP methods and a resource-based URI pattern. API versioning would be introduced in the future to support backward compatibility as the system evolves. Given more time, the focus would shift toward enhancing the system's reliability and flexibility through comprehensive testing and method transformation features.
+
+
+
+## Running the Code
+
+### 1. **Opening the Project**
+- Open the project in IntelliJ IDEA or any related IDE of your choice (e.g., Eclipse, VS Code).
+
+### 2. **Fetching Dependencies**
+- Run a **Maven Update** to fetch the required dependencies. This can be done by:
+  - In IntelliJ: Right-click on the project > **Maven** > **Reload Project**.
+  - In Eclipse: Right-click on the project > **Maven** > **Update Project**.
+
+### 3. **Testing the Endpoints**
+- After setting up the project, use **Postman** to test the API endpoints. You will receive an invitation to the Postman workspace where the API endpoints have been pre-configured for testing.
+
+- Once you're in the workspace, you can:
+  - Open the Postman app and import the collection to start testing the endpoints.
+  - Test various HTTP methods such as GET, POST, PUT, and DELETE on the defined endpoints.
+
+## Conclusion
+The design of the API Gateway follows RESTful principles with proper HTTP methods, a resource-based URI pattern, and versioning for future compatibility. Given more time, the focus would shift toward enhancing the system's reliability and flexibility through comprehensive testing and method transformation features.
