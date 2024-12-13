@@ -10,6 +10,12 @@ spring:
           filters:
             - RewritePath=/users, /users/create
 
+        - id: get-user
+          uri: https://gateway-poc-axh2wfbs7q-ew.a.run.app
+          predicates:
+            - Method=GET
+            - Path=/users/{id}
+
 logging:
   level:
     org.springframework.cloud.gateway: DEBUG
